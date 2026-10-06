@@ -1,6 +1,6 @@
 # Labo 3 - reflecties
 
-Naam: (jouw naam)
+Naam: Emile Vercammen
 
 ## 1. Kleurenstalen
 

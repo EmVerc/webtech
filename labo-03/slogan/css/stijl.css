@@ -6,3 +6,25 @@
 }
 
 /* === your rules === */
+body{
+    color: #282827;
+    background-color: white;
+    text-align: center;
+    font-family: Arial;
+    margin: 25%;
+}
+h2{
+    font-size: 3.5rem; 
+}
+h2 span{
+    border-bottom: 0.5rem solid #fccc00;
+    border-radius: 4vh;
+    border-width: 1rem;
+}
+a{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border-radius: 2vh;
+    padding: 0.75rem;
+}

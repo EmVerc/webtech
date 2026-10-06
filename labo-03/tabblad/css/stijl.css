@@ -2,7 +2,27 @@
 
 /* === tokens === */
 :root {
-
+    --color-background: #ff816f;
+    --color-tabblad: #ffd500;
 }
 
 /* === your rules === */
+body{
+    color: black;
+    background-color: var(--color-background);
+    font-family: Arial;
+    padding: 5rem;
+}
+
+h1{
+    background-color: var(--color-tabblad);
+    width: 15rem;
+    border: 0.25rem solid black;
+    border-bottom: none;
+}
+
+h2{
+    background-color: white;
+    width: 35rem;
+    border:  0.25rem solid black;
+}
