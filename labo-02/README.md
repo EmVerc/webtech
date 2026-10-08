@@ -18,18 +18,19 @@ Vul de eerste twee kolommen in vóór je de pagina opent. Trede: herkomst, speci
 
 | vraag | mijn voorspelling (kleur) | beslissende trede | uitkomst in de browser | juist? |
 |----|------|---------------|----|----|
-| 1  | G    | herkomst      |    |    |
-| 2  | B    | volgorde      |    |    |
-| 3  | R    | specificiteit |    |    |
-| 4  | GREY | specificiteit |    |    |
-| 5  | B    | specificiteit |    |    |
-| 6  | B    | specificiteit |    |    |
-| 7  | GREY |               |    |    |
-| 8  | B    |               |    |    |
-| 9  | B    |               |    |    |
-| 10 | G    |               |    |    |
+| 1  | G    | herkomst      | G  | y  |
+| 2  | B    | volgorde      | B  | y  |
+| 3  | R    | specificiteit | R  | y  |
+| 4  | GREY | herkomst      | R  | n  |
+| 5  | R    | specificiteit | B  | y  |
+| 6  | B    | specificiteit | B  | y  |
+| 7  | GREY | herkomst      | R  | n  |
+| 8  | B    | specificiteit | B  | y  |
+| 9  | R    | specificiteit | R  | y  |
+| 10 | G    | specificiteit | G  | y  |
 
 Bij welke vraag zat je fout, en wat was de reden? (Alles juist? Welke vraag duurde het langst, en waarom?)
+De kleur, overerving doorheen het document.
 
 ## 4. De nabouw
 
