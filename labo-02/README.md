@@ -30,12 +30,14 @@ Vul de eerste twee kolommen in vóór je de pagina opent. Trede: herkomst, speci
 | 10 | G    | specificiteit | G  | y  |
 
 Bij welke vraag zat je fout, en wat was de reden? (Alles juist? Welke vraag duurde het langst, en waarom?)
-De kleur, overerving doorheen het document.
+> De kleur, overerving doorheen het document.
 
 ## 4. De nabouw
 
 - Welke selector koos je voor de links in de navigatie, en waarom geen class?
+> nav a, omdat deze al verwijst naar de links in nav.
 - Welke regel kostte je het meeste tijd, en wat was uiteindelijk de oorzaak?
+> Wanneer de link-tekst (van a in de footer) grijs moest maken zonder hover of focus. Ik moest extra verduidelijken aan de hand van de selector "footer a" om de kleur van de link-tekst aan te kunnen passen.
 
 ## 6. Je site
 
