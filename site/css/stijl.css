@@ -1,0 +1,27 @@
+:root{
+    --color-accent: #ffbf00;
+    --color-achtergrond: #fffefe;
+    --color-gedempt: #6b6b6b;
+    --color-gemarkeerd: #373737;
+    --lettertype: Arial;
+    --maat-standaard: 1.05rem;
+}
+
+body{
+    background-color: var(--color-achtergrond);
+    font-family: var(--lettertype);
+    font-size: var(--maat-standaard);
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--color-accent);
+}
+
+nav a:hover, nav a:focus{
+    background-color: var(--color-gemarkeerd);
+}
+
+footer{
+    color: var(--color-gedempt);
+}
