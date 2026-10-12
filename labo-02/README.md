@@ -1,6 +1,6 @@
 # Labo 2 - reflecties
 
-Naam: (jouw naam)
+Naam: Emile Vercammen
 
 ## 2. Selectors lezen
 
@@ -42,7 +42,11 @@ Bij welke vraag zat je fout, en wat was de reden? (Alles juist? Welke vraag duur
 ## 6. Je site
 
 - Welke drie waarden staan in je tokenblok, en waarom die?
+> --color-accent: #ffbf00;, --color-gedempt: #6b6b6b;, --lettertype: Arial;
+--> omdat deze de kleuren doorheen heel het document in de body van elke pagina aanpast (accent voor belangrijke tekst, gedempt voor footer)
+--> om het type tekst in 1 regel bovenaan in root van de stylesheet aan te passen voor alle HTML-pagina's
 - Wat verandert er in je site als je één token wijzigt?
+> de kleur, het teksttype of de standaardmaat wordt gewijzigd doorheen elke HTML-pagina gelinkt aan de stylesheet
 
 ## Thuis: R2.3 (met AI)
 
