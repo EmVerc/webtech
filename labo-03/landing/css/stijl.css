@@ -2,7 +2,109 @@
 
 /* === tokens === */
 :root {
-
+    --color-banner: #c8b8ff;
+    --color-banner-link: #5551ff;
+    --color-hero: #779cee;
+    --color-ink: #000000;
+    --color-paper: #FFFFFF;
+    --color-hover: #333333;
+    --font-body: Arial;
 }
 
 /* === your rules === */
+body{
+    color: var(--color-ink);
+    font-family: var(--font-body);
+}
+
+.banner{
+    background-color: var(--color-banner);
+    text-align: center;
+    font-size: 0.875rem;
+    padding: 1rem;
+}
+
+.banner a{
+    color: var(--color-banner-link);
+}
+
+header{
+    text-align: right;
+    padding: 1.5rem 2rem;
+}
+
+nav ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+nav a{
+    color: var(--color-ink);
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.banner a:hover, .banner a:focus,
+nav a:hover, nav a:focus{
+    text-decoration: underline;
+}
+
+main{
+    background-color: var(--color-hero);
+    min-height: 80vh;
+    padding: 2rem 4rem;
+}
+
+article, .afbeelding{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+article{
+    padding: 2rem 4rem 2rem 0;
+}
+
+.afbeelding{
+    padding: 2rem;
+}
+
+img{
+    width: 70%;
+}
+
+.bovenkop{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.15;
+}
+
+article p{
+    line-height: 1.6;
+    max-width: 24rem;
+    margin-bottom: 2rem;
+}
+
+.knop{
+    background-color: var(--color-ink);
+    color: var(--color-paper);
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.knop:hover, .knop:focus{
+    background-color: var(--color-hover);
+}
