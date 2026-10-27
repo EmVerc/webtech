@@ -2,7 +2,82 @@
 
 /* === tokens === */
 :root {
-
+    --color-blauw: #1e5bd8;
+    --color-roze: #e88bb4;
+    --color-rood: #c51f2a;
+    --color-oranje: #d98c1a;
+    --color-groen: #3b7a2a;
+    --color-salie: #8fb89a;
+    --color-paars: #7b4fa3;
+    --color-grijs: #6b6b6b;
+    --color-paper: #ffffff;
+    --font-body: Verdana;
 }
 
 /* === your rules === */
+body{
+    background-color: var(--color-paper);
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.blauw{
+    color: var(--color-blauw);
+    border-color: var(--color-blauw);
+}
+
+.roze{
+    color: var(--color-roze);
+    border-color: var(--color-roze);
+}
+
+.rood{
+    color: var(--color-rood);
+    border-color: var(--color-rood);
+}
+
+.oranje{
+    color: var(--color-oranje);
+    border-color: var(--color-oranje);
+}
+
+.groen{
+    color: var(--color-groen);
+    border-color: var(--color-groen);
+}
+
+.salie{
+    color: var(--color-salie);
+    border-color: var(--color-salie);
+}
+
+.paars{
+    color: var(--color-paars);
+    border-color: var(--color-paars);
+}
+
+.grijs{
+    color: var(--color-grijs);
+    border-color: var(--color-grijs);
+}
+
+blockquote{
+    border-left: 0.5rem solid black;
+}
+
+.citaten{
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.citaat{
+    flex-basis: 18rem;
+    flex-grow: 1;
+    padding-left: 0.5rem;
+}
+
+.citaat p{
+    margin-bottom: 1rem;
+}

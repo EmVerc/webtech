@@ -2,7 +2,72 @@
 
 /* === tokens === */
 :root {
-
+    --color-a: #e9493f;
+    --color-b: #edd24a;
+    --color-c: #072f55;
+    --color-d: #52a51a;
+    --color-e: #efaad9;
+    --color-f: #a5f129;
+    --color-g: #ebc47a;
+    --color-h: #e8882c;
+    --color-paper: #ffffff;
+    --font-body: Arial;
 }
 
 /* === your rules === */
+body{
+    background-color: var(--color-paper);
+    color: var(--color-paper);
+    font-family: var(--font-body);
+    font-size: 1.5rem;
+}
+
+.a{
+    background-color: var(--color-a);
+}
+
+.b{
+    background-color: var(--color-b);
+}
+
+.c{
+    background-color: var(--color-c);
+}
+
+.d{
+    background-color: var(--color-d);
+}
+
+.e{
+    background-color: var(--color-e);
+}
+
+.f{
+    background-color: var(--color-f);
+}
+
+.g{
+    background-color: var(--color-g);
+}
+
+.h{
+    background-color: var(--color-h);
+}
+
+.raster{
+    height: 100vh;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.b, .h{
+    grid-column-start: 4;
+}
+
+.vlak{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem 0.75rem 0 0;
+}
