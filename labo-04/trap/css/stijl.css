@@ -2,7 +2,52 @@
 
 /* === tokens === */
 :root {
-
+  --color-blauw: #1446a0;
+  --color-rood: #db3069;
+  --color-geel: #f5d547;
+  --color-groen: #ebebd3;
+  --color-tekst: #ffffff;
+  --color-ink: #2b2b2b;
+  --tekst-size: 3rem;
+  --font-body: Arial;
 }
 
 /* === your rules === */
+body {
+  font-family: var(--font-body);
+}
+
+.trap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height: 100vh;
+}
+
+.trede {
+  font-size: var(--tekst-size);
+  color: var(--color-tekst);
+  font-weight: bold;
+  display: grid;
+  place-items: center;
+}
+
+.trede:nth-child(1) {
+  background-color: var(--color-blauw);
+}
+.trede:nth-child(2) {
+  background-color: var(--color-rood);
+  grid-column: 2;
+  grid-row: 2;
+}
+.trede:nth-child(3) {
+  background-color: var(--color-geel);
+  grid-column: 3;
+  grid-row: 3;
+}
+.trede:nth-child(4) {
+  background-color: var(--color-groen);
+  grid-column: 4;
+  grid-row: 4;
+  color: var(--color-ink);
+}

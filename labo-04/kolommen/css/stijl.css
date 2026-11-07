@@ -2,7 +2,39 @@
 
 /* === tokens === */
 :root {
-
+  --color-text: #ffffff;
+  --weight-text: bold;
+  --size-text: 4rem;
+  --font-body: Arial;
 }
 
 /* === your rules === */
+body {
+  font-family: var(--font-body);
+  font-size: var(--size-text);
+  font-weight: var(--weight-text);
+  color: var(--color-text);
+}
+
+main {
+  display: flex;
+  margin: 10vh 4vw;
+  gap: 4vw;
+  min-height: 80vh;
+}
+
+main > div {
+  flex: 1;
+  display: grid;
+  place-items: center;
+}
+
+main > div:nth-child(1) {
+  background-color: darkturquoise;
+}
+main > div:nth-child(2) {
+  background-color: darkviolet;
+}
+main > div:nth-child(3) {
+  background-color: deepskyblue;
+}
