@@ -2,57 +2,50 @@
 
 /* === tokens === */
 :root {
-    --color-tomato: #FF6347;
-    --color-orangered: #FF4500;
-    --color-coral: #FF7F50;
-    --color-lightsalmon: #FFA07A;
-    --color-darkorange: #FF8C00;
+  --color-tomato: #ff6347;
+  --color-orangered: #ff4500;
+  --color-coral: #ff7f50;
+  --color-lightsalmon: #ffa07a;
+  --color-darkorange: #ff8c00;
+  --color-text: #ffffff;
+  --font-body: Arial;
+  --space: 0.25rem;
 }
 
 /* === your rules === */
-body{
-    color: white;
-    background-color: white;
-    font-family: Arial;
-    text-align: center;
+body {
+  color: var(--color-text);
+  font-family: var(--font-body);
 }
 
-h2{
-    margin-bottom: 1vh;
-    letter-spacing: 0.25rem;
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
-ul{
-    margin: 0;
-    padding: 0;
+li {
+  height: 20vh;
+  padding-top: 7vh;
+  text-align: center;
 }
 
-li{
-    height: 20vh;
-    padding-top: 7vh;
+h2 {
+  letter-spacing: var(--space);
 }
 
-span:nth-child(){
-    margin-left: 1rem;
-    margin-right: 1rem;
+.tomato {
+  background-color: var(--color-tomato);
 }
-
-.tomato{
-    background-color: var(--color-tomato);
+.orangered {
+  background-color: var(--color-orangered);
 }
-
-.orangered{
-    background-color: var(--color-orangered);
+.coral {
+  background-color: var(--color-coral);
 }
-
-.coral{
-    background-color: var(--color-coral);
+.lightsalmon {
+  background-color: var(--color-lightsalmon);
 }
-
-.lightsalmon{
-    background-color: var(--color-lightsalmon);
-}
-
-.darkorange{
-    background-color: var(--color-darkorange);
+.darkorange {
+  background-color: var(--color-darkorange);
 }

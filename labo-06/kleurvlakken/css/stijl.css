@@ -1,0 +1,40 @@
+/* stijl.css - labo 6, kleurvlakken (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+  --color-rood: #b90020;
+  --color-groen: #349803;
+  --color-geel: #ffcd00;
+  --color-blauw: #006aff;
+}
+
+/* === base: narrow screens first === */
+main {
+  display: grid;
+  height: 100svh;
+}
+
+.rood {
+  background-color: var(--color-rood);
+}
+.groen {
+  background-color: var(--color-groen);
+}
+.geel {
+  background-color: var(--color-geel);
+}
+.blauw {
+  background-color: var(--color-blauw);
+}
+
+/* === media queries: below the base rules === */
+@media (min-width: 600px) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
