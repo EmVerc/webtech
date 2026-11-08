@@ -10,8 +10,8 @@
 
 /* === base: narrow screens first === */
 main {
+  min-height: 100svh;
   display: grid;
-  height: 100svh;
 }
 
 .rood {
@@ -27,13 +27,13 @@ main {
   background-color: var(--color-blauw);
 }
 
-/* === media queries: below the base rules === */
-@media (min-width: 600px) {
+@media (min-width: 37.5rem) {
   main {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-@media (min-width: 800px) {
+
+@media (min-width: 50rem) {
   main {
     grid-template-columns: repeat(2, 1fr);
   }
