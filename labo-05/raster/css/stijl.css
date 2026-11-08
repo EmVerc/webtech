@@ -2,72 +2,70 @@
 
 /* === tokens === */
 :root {
-    --color-a: #e9493f;
-    --color-b: #edd24a;
-    --color-c: #072f55;
-    --color-d: #52a51a;
-    --color-e: #efaad9;
-    --color-f: #a5f129;
-    --color-g: #ebc47a;
-    --color-h: #e8882c;
-    --color-paper: #ffffff;
-    --font-body: Arial;
+  --color-a: #e9493f;
+  --color-b: #edd24a;
+  --color-c: #072f55;
+  --color-d: #52a51a;
+  --color-e: #efaad9;
+  --color-f: #a5f129;
+  --color-g: #ebc47a;
+  --color-h: #e8882c;
+  --color-paper: #ffffff;
+  --font-body: Arial;
 }
 
 /* === your rules === */
-body{
-    background-color: var(--color-paper);
-    color: var(--color-paper);
-    font-family: var(--font-body);
-    font-size: 1.5rem;
+body {
+  background-color: var(--color-paper);
+  font-family: var(--font-body);
 }
 
-.a{
-    background-color: var(--color-a);
+.raster {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "a . . b" "c d e f" "g . . h";
+  gap: 1rem;
+  padding: 1rem;
+  min-height: 100vh;
 }
 
-.b{
-    background-color: var(--color-b);
+.vlak {
+  color: var(--color-paper);
+  font-size: 1.5rem;
+  text-align: right;
+  padding: 0.5rem 0.75rem;
 }
 
-.c{
-    background-color: var(--color-c);
+.a {
+  background-color: var(--color-a);
+  grid-area: a;
 }
-
-.d{
-    background-color: var(--color-d);
+.b {
+  background-color: var(--color-b);
+  grid-area: b;
 }
-
-.e{
-    background-color: var(--color-e);
+.c {
+  background-color: var(--color-c);
+  grid-area: c;
 }
-
-.f{
-    background-color: var(--color-f);
+.d {
+  background-color: var(--color-d);
+  grid-area: d;
 }
-
-.g{
-    background-color: var(--color-g);
+.e {
+  background-color: var(--color-e);
+  grid-area: e;
 }
-
-.h{
-    background-color: var(--color-h);
+.f {
+  background-color: var(--color-f);
+  grid-area: f;
 }
-
-.raster{
-    height: 100vh;
-    padding: 1rem;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(4, 1fr);
+.g {
+  background-color: var(--color-g);
+  grid-area: g;
 }
-
-.b, .h{
-    grid-column-start: 4;
-}
-
-.vlak{
-    display: flex;
-    justify-content: flex-end;
-    padding: 0.5rem 0.75rem 0 0;
+.h {
+  background-color: var(--color-h);
+  grid-area: h;
 }

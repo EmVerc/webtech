@@ -2,82 +2,69 @@
 
 /* === tokens === */
 :root {
-    --color-blauw: #1e5bd8;
-    --color-roze: #e88bb4;
-    --color-rood: #c51f2a;
-    --color-oranje: #d98c1a;
-    --color-groen: #3b7a2a;
-    --color-salie: #8fb89a;
-    --color-paars: #7b4fa3;
-    --color-grijs: #6b6b6b;
-    --color-paper: #ffffff;
-    --font-body: Verdana;
+  --color-blauw: #1e5bd8;
+  --color-roze: #e88bb4;
+  --color-rood: #c51f2a;
+  --color-oranje: #d98c1a;
+  --color-groen: #3b7a2a;
+  --color-salie: #8fb89a;
+  --color-paars: #7b4fa3;
+  --color-grijs: #6b6b6b;
+  --color-paper: #ffffff;
+  --font-body: Verdana;
 }
 
 /* === your rules === */
-body{
-    background-color: var(--color-paper);
-    font-weight: bold;
-    line-height: 1.5;
+body {
+  background-color: var(--color-paper);
+  font-family: var(--font-body);
+  line-height: 1.5;
 }
 
-.blauw{
-    color: var(--color-blauw);
-    border-color: var(--color-blauw);
+.citaten {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1.5rem;
 }
 
-.roze{
-    color: var(--color-roze);
-    border-color: var(--color-roze);
+.citaat {
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  flex: 1 1 18rem;
+  border-left: 0.5rem solid currentColor;
+}
+.citaat p {
+  margin-bottom: 0.5rem;
+}
+.citaat cite {
+  display: block;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 0.875rem;
 }
 
-.rood{
-    color: var(--color-rood);
-    border-color: var(--color-rood);
+.blauw {
+  color: var(--color-blauw);
 }
-
-.oranje{
-    color: var(--color-oranje);
-    border-color: var(--color-oranje);
+.roze {
+  color: var(--color-roze);
 }
-
-.groen{
-    color: var(--color-groen);
-    border-color: var(--color-groen);
+.rood {
+  color: var(--color-rood);
 }
-
-.salie{
-    color: var(--color-salie);
-    border-color: var(--color-salie);
+.oranje {
+  color: var(--color-oranje);
 }
-
-.paars{
-    color: var(--color-paars);
-    border-color: var(--color-paars);
+.groen {
+  color: var(--color-groen);
 }
-
-.grijs{
-    color: var(--color-grijs);
-    border-color: var(--color-grijs);
+.salie {
+  color: var(--color-salie);
 }
-
-blockquote{
-    border-left: 0.5rem solid black;
+.paars {
+  color: var(--color-paars);
 }
-
-.citaten{
-    padding: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-}
-
-.citaat{
-    flex-basis: 18rem;
-    flex-grow: 1;
-    padding-left: 0.5rem;
-}
-
-.citaat p{
-    margin-bottom: 1rem;
+.grijs {
+  color: var(--color-grijs);
 }

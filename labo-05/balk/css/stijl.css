@@ -2,59 +2,76 @@
 
 /* === tokens === */
 :root {
-    --color-paper: #f8f7f5;
-    --color-ink: #1a1a1a;
-    --color-gedempt: #6b6b6b;
-    --color-balk: #000000;
-    --color-link: #9a9a9a;
-    --color-link-actief: #ffffff;
+  --color-paper: #f8f7f5;
+  --color-ink: #1a1a1a;
+  --color-muted: #6b6b6b;
+  --color-bar: #000000;
+  --color-bar-text: #9a9a9a;
+  --color-bar-active: #ffffff;
+  --font-body: Verdana, sans-serif;
+  --font-heading: Georgia, serif;
+  --space: 1.5rem;
+  --balk-hoogte: 3.5rem;
 }
 
 /* === your rules === */
-body{
-    background-color: var(--color-paper);
-    color: var(--color-ink);
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
 }
 
-header{
-    background-color: var(--color-balk);
-    padding: 3.5rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space);
+  height: var(--balk-hoogte);
+  padding: 0 2rem;
+  background-color: var(--color-bar);
+}
+.logo {
+  text-decoration: none;
+  color: var(--color-bar-active);
+  margin-right: auto;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  gap: var(--space);
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+nav a {
+  text-decoration: none;
+  color: var(--color-bar-text);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+nav a:hover,
+nav a:focus,
+nav a.actief {
+  color: var(--color-bar-active);
 }
 
-.logo{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5rem;
-    font-family: Georgia;
+main {
+  max-width: 44rem;
+  padding: 2rem;
+  margin: 0 auto;
 }
-
-nav ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+h1 {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
 }
-
-nav li{
-    display: inline-block;
-    margin-left: 1.5rem;
-}
-
-nav a{
-    color: var(--color-link);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    letter-spacing: 0.05em;
-}
-
-nav a:hover, nav a:focus{
-    color: var(--color-link-actief);
-}
-
-main{
-    width: 44rem;
+.intro {
+  color: var(--color-muted);
+  margin-bottom: 0.5rem;
 }
