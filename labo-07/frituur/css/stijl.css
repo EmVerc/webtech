@@ -1,0 +1,136 @@
+/* stijl.css - labo 7, frituur (reset.css is linked before this file) */
+
+/* === tokens: five colour roles in hsl (7.7) === */
+:root {
+    color-scheme: light dark;
+
+    --color-oppervlak: light-dark(hsl(45 60% 96%), hsl(25 15% 10%));
+    --color-inkt: light-dark(hsl(25 30% 12%), hsl(40 30% 92%));
+    --color-gedempt: light-dark(hsl(25 10% 40%), hsl(30 10% 70%));
+    --color-accent: light-dark(hsl(22 85% 40%), hsl(32 90% 62%));
+    --color-lijn: light-dark(hsl(40 25% 80%), hsl(25 10% 28%));
+
+    --font-body: Verdana, serif;
+    --font-heading: Georgia, serif;
+    --line-height: 1.5;
+
+    --text-s: 0.8rem;
+    --text-m: 1rem;
+    --text-l: 1.25rem;
+    --text-xl: 1.563rem;
+    --text-xxl: 1.953rem;
+    --text-xxxl: 2.441rem;
+
+    --space-xs: 0.25rem;
+    --space-s: 0.5rem;
+    --space-m: 1rem;
+    --space-l: 2rem;
+    --space-xl: 4rem;
+}
+
+/* === base === */
+body{
+    min-height: 100svh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: var(--color-oppervlak);
+    color: var(--color-inkt);
+    font-family: var(--font-body);
+    line-height: var(--line-height);
+}
+
+header{
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-l);
+    text-align: center;
+}
+.naam{
+    font-family: var(--font-heading);
+    font-size: var(--text-xxl);
+    color: var(--color-accent);
+    line-height: 1.1;
+}
+.slogan{
+    color: var(--color-gedempt);
+    padding-top: var(--space-xs);
+}
+
+main{
+    max-width: 56rem;
+    padding: 0 var(--space-m) var(--space-l) var(--space-m);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "frieten snacks sauzen"
+    "openingsuren openingsuren openingsuren";
+    gap: var(--space-l);
+    margin: 0 auto;
+}
+section:nth-child(1){
+    min-width: 16rem;
+    grid-area: frieten;
+}
+section:nth-child(2){
+    min-width: 16rem;
+    grid-area: snacks;
+}
+section:nth-child(3){
+    min-width: 16rem;
+    grid-area: sauzen;
+}
+.info{
+    min-width: 16rem;
+    grid-area: openingsuren;
+    border: 1px solid var(--color-lijn);
+    border-radius: var(--space-s);
+    padding: var(--space-m);
+}
+.gedempt{
+    color: var(--color-gedempt);
+    font-size: var(--text-s);
+}
+.menu{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+h2{
+    font-size: var(--text-l);
+    font-family: var(--font-heading);
+    line-height: 1.2;
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: var(--space-xs);
+    margin-bottom: var(--space-s);
+}
+.menu li{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-s) 0;
+    border-bottom: 1px dotted var(--color-lijn);
+}
+.prijs{
+    font-weight: bold;
+    color: var(--color-accent);
+}
+.label{
+    background-color: var(--color-accent);
+    color: var(--color-oppervlak);
+    font-size: var(--text-s);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0 var(--space-s);
+    border-radius: var(--space-xs);
+    margin-left: var(--space-s);
+}
+
+footer{
+    border-top: 1px solid var(--color-gedempt);
+    padding: var(--space-l) 0;
+    text-align: center;
+    color: var(--color-gedempt);
+    font-size: var(--text-s);
+}
+
+/* === dark mode: tokens only (7.9) === */

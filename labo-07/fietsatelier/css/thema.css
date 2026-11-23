@@ -1,0 +1,35 @@
+/* thema.css - labo 7, fietsatelier: look B
+   Leave this file empty for screenshot A.
+   For screenshot B: only @font-face rules and one :root block with the tokens of look B. */
+@font-face {
+  font-family: "Fraunces";
+  src: url(../fonts/fraunces-latin-wght-normal.woff2);
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url(../fonts/atkinson-hyperlegible-latin-400-normal.woff2);
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url(../fonts/atkinson-hyperlegible-latin-700-normal.woff2);
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --color-surface: hsl(195 40% 95%);
+  --color-ink: hsl(200 50% 12%);
+  --color-muted: hsl(200 15% 38%);
+  --color-accent: hsl(350 75% 40%);
+  --color-line: hsl(195 20% 78%);
+
+  --font-heading: "Fraunces", Georgia, serif;
+  --font-body: "Atkinson Hyperlegible", Verdana, sans-serif;
+  --radius: 1rem;
+}

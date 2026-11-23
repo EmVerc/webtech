@@ -1,0 +1,73 @@
+/* stijl.css - labo 7, tintenladder (reset.css is linked before this file) */
+
+/* === tokens === */
+:root {
+    --color-paper: hsl(40 30% 97%);
+    --color-ink: hsl(210 26% 12%);
+    --color-muted: hsl(210 10% 42%);
+    --hue: 210;
+}
+
+/* === base === */
+body{
+    background-color: var(--color-paper);
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100svh;
+    color: var(--color-ink);
+}
+header{
+    padding: 2rem 1rem;
+}
+h1{
+    font-family: Georgia;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+p{
+    color: var(--color-muted);
+    font-size: 0.875rem;
+}
+/* === the ten steps: one rule per step === */
+.ladder{
+    display: grid;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+.trede{
+    padding: 2rem 1rem;
+}
+.trede:nth-child(1){
+    background-color: hsl(var(--hue) 55% 95%);
+}
+.trede:nth-child(2){
+    background-color: hsl(var(--hue) 55% 85%);
+}
+.trede:nth-child(3){
+    background-color: hsl(var(--hue) 55% 75%);
+}
+.trede:nth-child(4){
+    background-color: hsl(var(--hue) 55% 65%);
+}
+.trede:nth-child(5){
+    background-color: hsl(var(--hue) 55% 55%);
+}
+.trede:nth-child(n+6){
+    color: var(--color-paper);
+}
+.trede:nth-child(6){
+    background-color: hsl(var(--hue) 55% 45%);
+}
+.trede:nth-child(7){
+    background-color: hsl(var(--hue) 55% 35%);
+}
+.trede:nth-child(8){
+    background-color: hsl(var(--hue) 55% 25%);
+}
+.trede:nth-child(9){
+    background-color: hsl(var(--hue) 55% 15%);
+}
+.trede:nth-child(10){
+    background-color: hsl(var(--hue) 55% 5%);
+}
